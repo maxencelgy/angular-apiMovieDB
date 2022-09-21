@@ -12,7 +12,7 @@
 
 <div class="container">
   <div *ngFor="let movie of listMovies" style="margin-bottom: 1rem">
-    <a href="/single/{{ movie.id}}">
+    <a routerLink="/single/{{ movie.id}}">
       <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/{{ movie.poster_path}}" alt="">
     </a>
     <h2>Note<span style="color: red"> {{ movie.vote_average }}</span></h2>
@@ -26,12 +26,12 @@
 
   <nav aria-label="pagination">
     <ul class="pagination">
-      <li><a href="/home/1"><span aria-hidden="true">«</span><span class="visuallyhidden">previous set of pages</span></a></li>
-      <li><a href="/home/1"><span class="visuallyhidden">page </span>1</a></li>
-      <li><a href="/home/2" aria-current="page"><span class="visuallyhidden">page </span>2</a></li>
-      <li><a href="/home/3"><span class="visuallyhidden">page </span>3</a></li>
-      <li><a href="/home/4"><span class="visuallyhidden">page </span>4</a></li>
-      <li><a href="/home/5"><span class="visuallyhidden">next set of pages</span><span aria-hidden="true">»</span></a></li>
+      <li><a routerLink="/home/1"><span aria-hidden="true">«</span><span class="visuallyhidden">previous set of pages</span></a></li>
+      <li><a routerLink="/home/1"><span class="visuallyhidden">page </span>1</a></li>
+      <li><a routerLink="/home/2" aria-current="page"><span class="visuallyhidden">page </span>2</a></li>
+      <li><a routerLink="/home/3"><span class="visuallyhidden">page </span>3</a></li>
+      <li><a routerLink="/home/4"><span class="visuallyhidden">page </span>4</a></li>
+      <li><a routerLink="/home/5"><span class="visuallyhidden">next set of pages</span><span aria-hidden="true">»</span></a></li>
     </ul>
   </nav>
 
